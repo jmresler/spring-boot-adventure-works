@@ -1,0 +1,14 @@
+rootProject.name = 'spring-boot-adventure-works'
+
+include ':spring-boot-aw-entities'
+include ':spring-boot-hr-view-services'
+include ':spring-boot-hr-services'
+include ':spring-boot-person-view-services'
+include ':spring-boot-person-services'
+include ':spring-boot-production-view-services'
+include ':spring-boot-production-services'
+include ':spring-boot-purchasing-view-services'
+include ':spring-boot-purchasing-services'
+include ':spring-boot-sales-view-services'
+include ':spring-boot-sales-services'
+

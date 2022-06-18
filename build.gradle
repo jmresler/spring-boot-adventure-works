@@ -1,0 +1,14 @@
+description = 'Spring Boot APIS built around MS SQL AdventureWorks2017 DB'
+allprojects {
+
+    group = 'org.jmresler.studies.spring'
+
+    repositories {
+        mavenCentral()
+    }
+}
+
+subprojects {
+    apply plugin: 'java'
+
+}
