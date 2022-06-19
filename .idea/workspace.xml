@@ -5,44 +5,46 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="4360dfb1-5df9-431e-9ab8-016e26de9ed9" name="Changes" comment="Added Spring Boot Dependencies">
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/executionHistory/executionHistory.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/7.4/fileHashes/fileHashes.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/cache.properties" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-hr-services/src/test/java/org/jmresler/hr/aw/svcs/ApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-person-services/src/test/java/org/jmresler/person/aw/svcs/ApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-person-view-services/src/test/java/org/jmresler/person/aw/views/svcs/ApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-production-services/src/test/java/org/jmresler/production/aw/svcs/ApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-production-view-services/src/test/java/org/jmresler/production/aw/views/svcs/ApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-purchasing-services/src/test/java/org/jmresler/purchasing/aw/svcs/ApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-purchasing-view-services/src/test/java/org/jmresler/purchasing/aw/views/svcs/ApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sales-services/src/test/java/org/jmresler/sales/aw/svcs/ApplicationTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-sales-view-services/src/test/java/org/jmresler/sales/aw/views/svcs/ApplicationTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/Application.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/Application.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/config/SecurityConfiguration.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/config/SecurityConfiguration.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/controllers/EmployeeDepartmentViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/controllers/EmployeeDepartmentViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/controllers/EmployeeViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/controllers/EmployeeViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/controllers/EmployeeViewControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/controllers/EmployeeViewControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/domain/VEmployee.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/domain/VEmployee.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/domain/VEmployeeDepartment.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/domain/VEmployeeDepartment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/domain/VEmployeeDepartmentHistory.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/domain/VEmployeeDepartmentHistory.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/domain/VJobCandidate.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/domain/VJobCandidate.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/domain/VJobCandidateEducation.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/domain/VJobCandidateEducation.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/domain/VJobCandidateEmployment.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/domain/VJobCandidateEmployment.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/domain/repo/VEmployeeDepartmentHistoryRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/domain/repo/VEmployeeDepartmentHistoryRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/domain/repo/VEmployeeDepartmentRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/domain/repo/VEmployeeDepartmentRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/domain/repo/VEmployeeRepository.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/domain/repo/VEmployeeRepository.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/dto/EmployeeDepartmentViewList.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/dto/EmployeeDepartmentViewList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/dto/EmployeeViewList.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/dto/EmployeeViewList.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/services/EmployeeDepartmentViewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/services/EmployeeDepartmentViewService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/services/EmployeeViewService.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/services/EmployeeViewService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/services/IllegalPageSizeException.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/services/IllegalPageSizeException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/services/NoEmployeeDepartmentViewException.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/services/NoEmployeeDepartmentViewException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/services/NoEmployeeViewException.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/services/NoEmployeeViewException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/services/NoSuchPageException.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/services/NoSuchPageException.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/util/EmailAddressValidator.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/util/EmailAddressValidator.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/micro/util/ObjectToJSONStringSerializer.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/util/ObjectToJSONStringSerializer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/micro/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/aw/views/svcs/ApplicationTests.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/micro/controllers/EmployeeDepartmentViewControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/aw/views/svcs/controllers/EmployeeDepartmentViewControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/micro/controllers/EmployeeViewControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/aw/views/svcs/controllers/EmployeeViewControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/micro/domain/repo/VEmployeeDepartmentHistoryRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/aw/views/svcs/domain/repo/VEmployeeDepartmentHistoryRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/micro/domain/repo/VEmployeeDepartmentRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/aw/views/svcs/domain/repo/VEmployeeDepartmentRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/micro/domain/repo/VEmployeeRepositoryTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/aw/views/svcs/domain/repo/VEmployeeRepositoryTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/micro/services/EmployeeDepartmentViewServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/aw/views/svcs/services/EmployeeDepartmentViewServiceTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/micro/services/EmployeeViewServiceTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/aw/views/svcs/services/EmployeeViewServiceTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-aw-entities/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-aw-entities/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-hr-services/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-services/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-hr-services/src/main/java/placeholder.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-hr-services/src/test/java/placeholder.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/aw/views/svcs/ApplicationTests.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/aw/views/svcs/ApplicationTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-person-services/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-person-services/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-person-services/src/main/java/placeholder.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-person-services/src/test/java/placeholder.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-person-view-services/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-person-view-services/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-person-view-services/src/main/java/placeholder.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-person-view-services/src/test/java/placeholder.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-production-services/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-production-services/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-production-services/src/main/java/placeholder.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-production-services/src/test/java/placeholder.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-production-view-services/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-production-view-services/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-production-view-services/src/main/java/placeholder.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-production-view-services/src/test/java/placeholder.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-purchasing-services/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-purchasing-services/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-purchasing-services/src/main/java/placeholder.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-purchasing-services/src/test/java/placeholder.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-purchasing-view-services/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-purchasing-view-services/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-purchasing-view-services/src/main/java/placeholder.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-purchasing-view-services/src/test/java/placeholder.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-sales-services/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sales-services/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-sales-services/src/main/java/placeholder.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-sales-services/src/test/java/placeholder.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-sales-view-services/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sales-view-services/build.gradle" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-sales-view-services/src/main/java/placeholder.txt.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-sales-view-services/src/test/java/placeholder.txt.txt" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,12 +114,22 @@
       <recent name="C:\Users\jmres\git\spring-boot-adventure-works\spring-boot-hr-view-services" />
       <recent name="C:\Users\jmres\git\spring-boot-adventure-works\spring-boot-hr-services" />
     </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
+    </key>
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="org.jmresler.hr.aw.svcs" />
+    </key>
     <key name="CopyClassDialog.RECENTS_KEY">
-      <recent name="svcs" />
+      <recent name="org.jmresler.sales.aw.views.svcs" />
+      <recent name="org.jmresler.sales.aw.svcs" />
+      <recent name="org.jmresler.purchasing.aw.views.svcs" />
+      <recent name="org.jmresler.purchasing.aw.svcs" />
+      <recent name="org.jmresler.production.aw.views.svcs" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Application">
-    <configuration name="Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="Application.org.jmresler.hr.aw.views.svcs.Application">
+    <configuration name="org.jmresler.hr.aw.views.svcs.Application" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="org.jmresler.hr.aw.views.svcs.Application" />
       <module name="spring-boot-adventure-works.spring-boot-hr-view-services.main" />
       <extension name="coverage">
@@ -154,7 +166,7 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Application.Application" />
+        <item itemvalue="Application.org.jmresler.hr.aw.views.svcs.Application" />
       </list>
     </recent_temporary>
   </component>

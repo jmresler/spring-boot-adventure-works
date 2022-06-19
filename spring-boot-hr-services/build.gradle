@@ -125,8 +125,8 @@ jacocoTestCoverageVerification {
 
 
 pmdMain {
-    ignoreFailures(true)
-    consoleOutput(true)
+    ignoreFailures = true
+    consoleOutput = true
     rulesMinimumPriority = 5
     ruleSets = ["category/java/errorprone.xml",
                 "category/java/codestyle.xml",
