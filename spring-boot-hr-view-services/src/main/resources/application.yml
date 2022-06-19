@@ -3,18 +3,13 @@ logging:
     name: logs/${spring.application.name}.log
   level:
     root: warn
-    '[org.jmresler.hr.micro]': info
+    '[org.jmresler.hr.aw.views.svcs]': info
 
 management:
-  endpoint:
-    health:
-      group:
-        custom:
-          include:
-            - env
-            - health
-            - diskSpace
-            - ping
+  endpoints:
+    web:
+      exposure:
+        include: env
 
 server:
   servlet:
