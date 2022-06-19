@@ -13,9 +13,11 @@ plugins {
     id 'org.springframework.boot' version '2.7.0'
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
+    id 'jacoco'
+    id 'pmd'
 }
 
-group = 'org.jmresler.spring.aw'
+group = 'org.jmresler.studies'
 version = '1.0.0-SNAPSHOT'
 description = 'Human Resources View Entity Endpoints'
 sourceCompatibility = '11'
@@ -53,29 +55,83 @@ configurations {
     }
 }
 
+
+ext {
+    lombokVersion = '1.18.24'
+    junitVersion = '5.8.2'
+}
+
 repositories {
     mavenCentral()
-
 }
+
 
 dependencies {
 
+    implementation 'com.google.code.gson:gson:2.9.0'
     implementation 'org.springframework.boot:spring-boot-starter-data-jpa'
     implementation 'org.springframework.boot:spring-boot-starter-data-rest'
-    implementation 'org.springframework.boot:spring-boot-starter-hateoas'
-    implementation 'org.springframework.data:spring-data-rest-hal-explorer'
-    compileOnly 'org.projectlombok:lombok'
+    implementation 'org.springframework.boot:spring-boot-actuator'
     developmentOnly 'org.springframework.boot:spring-boot-devtools'
-    runtimeOnly 'com.h2database:h2'
-    implementation group: 'com.microsoft.sqlserver', name: 'mssql-jdbc', version: '10.2.1.jre11'
+    runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
-    annotationProcessor 'org.projectlombok:lombok'
+
+
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+    implementation 'io.springfox:springfox-boot-starter:3.0.0'
+
+
+    testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
+    testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
+    testImplementation "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
 }
 
 tasks.named('test') {
     useJUnitPlatform()
 }
 
+test {
+    finalizedBy jacocoTestReport // report is always generated after tests run
+}
+jacocoTestReport {
+    dependsOn test // tests are required to run before generating the report
+}
 
 
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.75
+            }
+        }
+
+        rule {
+            enabled = false
+            element = 'CLASS'
+            includes = ['org.gradle.*']
+
+            limit {
+                counter = 'LINE'
+                value = 'TOTALCOUNT'
+                maximum = 0.3
+            }
+        }
+    }
+}
+
+
+pmdMain {
+    ignoreFailures(true)
+    consoleOutput(true)
+    rulesMinimumPriority = 5
+    ruleSets = ["category/java/errorprone.xml",
+                "category/java/codestyle.xml",
+                "category/java/design.xml",
+                "category/java/performance.xml",
+                "category/java/multithreading.xml",
+                "category/java/bestpractices.xml"]
+}

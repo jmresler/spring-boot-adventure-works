@@ -1,1 +1,103 @@
+buildscript {
+    repositories {
+        mavenCentral()
+
+    }
+    dependencies {
+    }
+}
+
+plugins {
+    id 'java'
+    id 'java-library'
+    id 'jacoco'
+    id 'pmd'
+}
+
 description = 'Spring Boot JPA Entities for Adventure Works 2017 DB'
+
+
+java {
+    sourceCompatibility = "11"
+    targetCompatibility = "11"
+}
+
+repositories {
+    // Use Maven Central for resolving dependencies.
+    mavenCentral()
+}
+
+dependencies {
+
+    implementation 'javax.xml.bind:jaxb-api:2.4.0-b180830.0359'
+    implementation 'com.google.code.gson:gson:2.9.0'
+    implementation 'com.microsoft.sqlserver:mssql-jdbc:10.2.1.jre11'
+
+    // Eclipse, jpa libs
+    implementation 'org.eclipse.persistence:org.eclipse.persistence.core:2.7.9'
+    implementation 'org.eclipse.persistence:org.eclipse.persistence.asm:9.1.0'
+    implementation 'org.eclipse.persistence:org.eclipse.persistence.antlr:2.7.9'
+    implementation 'org.eclipse.persistence:org.eclipse.persistence.jpa:2.7.9'
+    implementation 'org.eclipse.persistence:org.eclipse.persistence.jpa.jpql:2.7.9'
+    implementation 'org.eclipse.persistence:org.eclipse.persistence.moxy:2.7.9'
+    implementation 'org.eclipse.persistence:javax.persistence:2.2.1'
+    implementation 'org.eclipse.persistence:org.eclipse.persistence.jpa.modelgen.processor:2.7.9'
+
+    compileOnly 'org.projectlombok:lombok:1.18.24'
+    annotationProcessor 'org.projectlombok:lombok:1.18.24'
+    testCompileOnly 'org.projectlombok:lombok:1.18.24'
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
+
+
+    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
+    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+}
+
+test {
+    useJUnitPlatform()
+    finalizedBy jacocoTestReport // report is always generated after tests run
+}
+jacocoTestReport {
+    dependsOn test // tests are required to run before generating the report
+}
+
+jacocoTestCoverageVerification {
+    violationRules {
+        rule {
+            limit {
+                minimum = 0.75
+            }
+        }
+
+        rule {
+            enabled = false
+            element = 'CLASS'
+            includes = ['org.gradle.*']
+
+            limit {
+                counter = 'LINE'
+                value = 'TOTALCOUNT'
+                maximum = 0.3
+            }
+        }
+    }
+}
+
+jacoco {
+    toolVersion = "0.8.7"
+    reportsDirectory = layout.buildDirectory.dir('jacoco-reports')
+}
+
+
+pmd {
+    ignoreFailures(true)
+    consoleOutput = true
+    toolVersion = "6.21.0"
+    rulesMinimumPriority = 5
+    ruleSets = ["category/java/errorprone.xml",
+                "category/java/design.xml",
+                "category/java/codestyle.xml",
+                "category/java/performance.xml",
+                "category/java/multithreading.xml",
+                "category/java/bestpractices.xml"]
+}
