@@ -1,0 +1,42 @@
+logging:
+  file:
+    name: logs/${spring.application.name}.log
+  level:
+    root: warn
+    '[org.jmresler.purchasing.aw.svcs]': debug
+
+management:
+  endpoints:
+    web:
+      exposure:
+        include: env
+
+server:
+  servlet:
+    context-path: /v1/${spring.application.name}
+
+spring:
+  application:
+    name: purchasingsvc
+  datasource:
+    username: swdev
+    password: Kadena1988#
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    url: jdbc:sqlserver://localhost:1433;databaseName=AdventureWorks2017;sslProtocol=TLS;trustStoreType=JKS;trustServerCertificate=false;encrypt=false
+    hikari:
+      transaction-isolation: TRANSACTION_READ_UNCOMMITTED
+  jpa:
+    database: sql-server
+    generate-ddl: false
+    open-in-view: true
+    hibernate:
+      naming:
+        physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+    properties:
+      hibernate:
+        '[show_sql]': true
+        '[format_sql]': true
+  mvc:
+    pathmatch:
+      matching-strategy: ANT_PATH_MATCHER

@@ -11,15 +11,15 @@ import org.jmresler.hr.aw.views.svcs.services.EmployeeDepartmentViewService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.data.repository.query.Param;
 import org.springframework.http.HttpStatus;
-import org.springframework.http.MediaType;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
 
-import java.util.Collections;
-import java.util.List;
+import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
+import static org.springframework.http.MediaType.APPLICATION_XML_VALUE;
+
 
 @ApiOperation("Retrieve Employee Department View Items")
 @Slf4j
@@ -46,8 +46,8 @@ public class EmployeeDepartmentViewController {
     })
     @GetMapping(path = "/get-emp-dept/{id}",
             headers = {"id-claim"},
-            consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE},
-            produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+            consumes = {APPLICATION_JSON_VALUE, APPLICATION_XML_VALUE},
+            produces = {APPLICATION_JSON_VALUE, APPLICATION_XML_VALUE})
     public ResponseEntity<VEmployeeDepartment> getEmployeeDepartmentViewById(final @PathVariable("id") Integer employeeId) {
         return new ResponseEntity<>(service.getEmployeeDepartmentById(employeeId), HttpStatus.OK);
     }
@@ -66,8 +66,8 @@ public class EmployeeDepartmentViewController {
     })
     @GetMapping(path = "/get-emp-by-page/{pageNo}/{pageSize}",
             headers = {"id-claim"},
-            consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE},
-            produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+            consumes = {APPLICATION_JSON_VALUE, APPLICATION_XML_VALUE},
+            produces = {APPLICATION_JSON_VALUE, APPLICATION_XML_VALUE})
     public ResponseEntity<EmployeeDepartmentViewList> getEmployeeDepartmentViewsByPage(
             @ApiParam(name = "pageNo",
                     allowEmptyValue = false,
@@ -98,8 +98,8 @@ public class EmployeeDepartmentViewController {
     })
     @GetMapping(path = "/get-emp-dept-by-names-page/{pageNo}/{pageSize}",
             headers = {"id-claim"},
-            consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE},
-            produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+            consumes = {APPLICATION_JSON_VALUE, APPLICATION_XML_VALUE},
+            produces = {APPLICATION_JSON_VALUE, APPLICATION_XML_VALUE})
     public ResponseEntity<EmployeeDepartmentViewList> getEmployeeDepartmentViewsByFirstNameLastName(
             @ApiParam(name = "pageNo",
                     allowEmptyValue = false,
@@ -131,8 +131,8 @@ public class EmployeeDepartmentViewController {
     })
     @GetMapping(path = "/get-emp-dept-by-dept-page/{department}/{pageNo}/{pageSize}",
             headers = {"id-claim"},
-            consumes = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE},
-            produces = {MediaType.APPLICATION_JSON_VALUE, MediaType.APPLICATION_XML_VALUE})
+            consumes = {APPLICATION_JSON_VALUE, APPLICATION_XML_VALUE},
+            produces = {APPLICATION_JSON_VALUE, APPLICATION_XML_VALUE})
     public ResponseEntity<EmployeeDepartmentViewList> getEmployeeDepartmentViewsByDepartment(
             @ApiParam(name = "pageNo",
                     allowEmptyValue = false,
