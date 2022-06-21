@@ -4,59 +4,23 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="4360dfb1-5df9-431e-9ab8-016e26de9ed9" name="Changes" comment="Added Spring Boot Dependencies">
-      <change afterPath="$PROJECT_DIR$/spring-boot-hr-services/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-hr-services/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-hr-services/src/main/resources/application-qa.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/controllers/JobCandidateViewController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/domain/repo/JobCandidateRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/services/JobCandidateService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/services/NoJobCandidateViewException.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/resources/application-qa.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-person-services/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-person-services/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-person-services/src/main/resources/application-qa.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-person-view-services/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-person-view-services/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-person-view-services/src/main/resources/application-qa.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-production-services/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-production-services/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-production-services/src/main/resources/application-qa.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-production-view-services/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-production-view-services/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-production-view-services/src/main/resources/application-qa.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-purchasing-services/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-purchasing-services/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-purchasing-services/src/main/resources/application-qa.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-purchasing-view-services/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-purchasing-view-services/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-purchasing-view-services/src/main/resources/application-qa.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-sales-services/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-sales-services/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-sales-services/src/main/resources/application-qa.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-sales-view-services/src/main/resources/application-dev.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-sales-view-services/src/main/resources/application-prod.yml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/spring-boot-sales-view-services/src/main/resources/application-qa.yml" afterDir="false" />
+    <list default="true" id="4360dfb1-5df9-431e-9ab8-016e26de9ed9" name="Changes" comment="Added application-*.yml files">
+      <change afterPath="$PROJECT_DIR$/spring-boot-hr-services/src/main/java/org/jmresler/hr/aw/svcs/controllers/EmployeeController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-hr-services/src/main/java/org/jmresler/hr/aw/svcs/domain/Department.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-hr-services/src/main/java/org/jmresler/hr/aw/svcs/domain/Employee.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-hr-services/src/main/java/org/jmresler/hr/aw/svcs/domain/EmployeeDepartmentHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-hr-services/src/main/java/org/jmresler/hr/aw/svcs/domain/EmployeeDepartmentHistoryPK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-hr-services/src/main/java/org/jmresler/hr/aw/svcs/domain/EmployeePayHistory.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-hr-services/src/main/java/org/jmresler/hr/aw/svcs/domain/EmployeePayHistoryPK.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-hr-services/src/main/java/org/jmresler/hr/aw/svcs/domain/JobCandidate.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-hr-services/src/main/java/org/jmresler/hr/aw/svcs/domain/Shift.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-hr-services/src/main/java/org/jmresler/hr/aw/svcs/domain/repo/EmployeeRepository.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-hr-services/src/main/java/org/jmresler/hr/aw/svcs/services/EmployeeManagementService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/spring-boot-hr-services/src/main/java/org/jmresler/hr/aw/svcs/util/JsonSerializable.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-aw-entities/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-aw-entities/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-services/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-services/build.gradle" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-services/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-services/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/controllers/EmployeeDepartmentViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/controllers/EmployeeDepartmentViewController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/controllers/EmployeeViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/controllers/EmployeeViewController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/controllers/EmployeeViewControllerAdvice.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/controllers/HRViewControllerAdvice.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/aw/views/svcs/controllers/EmployeeViewControllerTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/test/java/org/jmresler/hr/aw/views/svcs/controllers/EmployeeViewControllerTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-person-services/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-person-services/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-person-view-services/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-person-view-services/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-production-services/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-production-services/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-production-view-services/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-production-view-services/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-purchasing-services/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-purchasing-services/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-purchasing-view-services/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-purchasing-view-services/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-sales-services/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sales-services/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/spring-boot-sales-view-services/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-sales-view-services/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/controllers/JobCandidateViewController.java" beforeDir="false" afterPath="$PROJECT_DIR$/spring-boot-hr-view-services/src/main/java/org/jmresler/hr/aw/views/svcs/controllers/JobCandidateViewController.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -113,22 +77,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent">{
-  &quot;keyToString&quot;: {
-    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
-    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
-    &quot;last_opened_file_path&quot;: &quot;C:/Users/jmres/git/spring-boot-adventure-works/spring-boot-hr-services/src/main/resources&quot;,
-    &quot;settings.editor.selected.configurable&quot;: &quot;JFrogGlobal&quot;
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
+    "last_opened_file_path": "C:/Users/jmres/git/spring-boot-adventure-works/spring-boot-hr-services/src/main/java/org/jmresler/hr/aw/svcs/domain",
+    "settings.editor.selected.configurable": "JFrogGlobal"
   }
-}</component>
+}]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\Users\jmres\git\spring-boot-adventure-works\spring-boot-hr-services\src\main\java\org\jmresler\hr\aw\svcs\domain" />
       <recent name="C:\Users\jmres\git\spring-boot-adventure-works\spring-boot-hr-services\src\main\resources" />
       <recent name="C:\Users\jmres\git\spring-boot-adventure-works\spring-boot-hr-view-services\src\main\resources" />
       <recent name="C:\Users\jmres\git\spring-boot-adventure-works\spring-boot-person-services\src\main\resources" />
       <recent name="C:\Users\jmres\git\spring-boot-adventure-works\spring-boot-person-view-services\src\main\resources" />
-      <recent name="C:\Users\jmres\git\spring-boot-adventure-works\spring-boot-production-services\src\main\resources" />
     </key>
     <key name="CreateTestDialog.Recents.Supers">
       <recent name="" />
@@ -137,11 +101,11 @@
       <recent name="org.jmresler.hr.aw.svcs" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="org.jmresler.hr.aw.svcs.util" />
       <recent name="org.jmresler.sales.aw.views.svcs" />
       <recent name="org.jmresler.sales.aw.svcs" />
       <recent name="org.jmresler.purchasing.aw.views.svcs" />
       <recent name="org.jmresler.purchasing.aw.svcs" />
-      <recent name="org.jmresler.production.aw.views.svcs" />
     </key>
   </component>
   <component name="RunManager" selected="Gradle.spring-boot-adventure-works [clean]">
@@ -246,7 +210,14 @@
       <option name="project" value="LOCAL" />
       <updated>1655607236615</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Added application-*.yml files">
+      <created>1655778472612</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1655778472612</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -262,6 +233,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Added Spring Boot Dependencies" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added Spring Boot Dependencies" />
+    <MESSAGE value="Added application-*.yml files" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added application-*.yml files" />
   </component>
 </project>

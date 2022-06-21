@@ -1,9 +1,6 @@
 package org.jmresler.hr.aw.views.svcs.controllers;
 
-import io.swagger.annotations.ApiOperation;
-import io.swagger.annotations.ApiParam;
-import io.swagger.annotations.ApiResponse;
-import io.swagger.annotations.ApiResponses;
+import io.swagger.annotations.*;
 import lombok.extern.slf4j.Slf4j;
 import org.jmresler.hr.aw.views.svcs.domain.VEmployee;
 import org.jmresler.hr.aw.views.svcs.dto.EmployeeViewList;
@@ -20,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 import static org.springframework.http.MediaType.APPLICATION_XML_VALUE;
 
-@ApiOperation("Retrieve Employee View Items")
+@Api("Retrieve Employee View Items")
 @Slf4j
 @RequestMapping(EmployeeViewController.PATH)
 @RestController
