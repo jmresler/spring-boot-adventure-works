@@ -81,7 +81,7 @@ dependencies {
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
     implementation 'io.springfox:springfox-boot-starter:3.0.0'
 
-
+    testRuntimeOnly 'com.h2database:h2:2.1.212'
     testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
     testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
     testImplementation 'org.springframework.boot:spring-boot-starter-test'

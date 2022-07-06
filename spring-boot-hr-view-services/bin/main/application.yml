@@ -3,7 +3,7 @@ logging:
     name: logs/${spring.application.name}.log
   level:
     root: warn
-    '[org.jmresler.hr.aw.svcs]': debug
+    '[org.jmresler.hr.aw.views.svcs]': debug
 
 management:
   endpoints:
@@ -14,10 +14,10 @@ management:
 server:
   servlet:
     context-path: /v1/${spring.application.name}
-
+    
 spring:
   application:
-    name: hrsvc
+    name: hrsvc-views
   datasource:
     username: swdev
     password: Kadena1988#
@@ -32,7 +32,7 @@ spring:
     hibernate:
       naming:
         physical-strategy: org.hibernate.boot.model.naming.PhysicalNamingStrategyStandardImpl
-        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl
+        implicit-strategy: org.hibernate.boot.model.naming.ImplicitNamingStrategyLegacyJpaImpl 
     properties:
       hibernate:
         '[show_sql]': true

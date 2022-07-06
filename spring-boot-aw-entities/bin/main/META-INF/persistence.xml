@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+    <persistence-unit name="adventureworks-2017-entities" transaction-type="RESOURCE_LOCAL">
+        <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+        <class>org.jmresler.aw.entities.hr.Department</class>
+        <class>org.jmresler.aw.entities.hr.VJobCandidateEducation</class>
+        <class>org.jmresler.aw.entities.hr.EmployeePayHistory</class>
+        <class>org.jmresler.aw.entities.hr.VEmployeeDepartment</class>
+        <class>org.jmresler.aw.entities.hr.VJobCandidate</class>
+        <class>org.jmresler.aw.entities.hr.VEmployeeDepartmentHistory</class>
+        <class>org.jmresler.aw.entities.hr.VEmployee</class>
+        <class>org.jmresler.aw.entities.hr.Shift</class>
+        <class>org.jmresler.aw.entities.hr.JobCandidate</class>
+        <class>org.jmresler.aw.entities.hr.VJobCandidateEmployment</class>
+        <class>org.jmresler.aw.entities.hr.Employee</class>
+        <class>org.jmresler.aw.entities.hr.EmployeeDepartmentHistory</class>
+        <class>org.jmresler.aw.entities.person.CountryRegion</class>
+        <class>org.jmresler.aw.entities.person.BusinessEntityContact</class>
+        <class>org.jmresler.aw.entities.person.BusinessEntity</class>
+        <class>org.jmresler.aw.entities.person.Person</class>
+        <class>org.jmresler.aw.entities.person.EmailAddress</class>
+        <class>org.jmresler.aw.entities.person.PhoneNumberType</class>
+        <class>org.jmresler.aw.entities.person.VStateProvinceCountryRegion</class>
+        <class>org.jmresler.aw.entities.person.PersonPhone</class>
+        <class>org.jmresler.aw.entities.person.ContactType</class>
+        <class>org.jmresler.aw.entities.person.Address</class>
+        <class>org.jmresler.aw.entities.person.StateProvince</class>
+        <class>org.jmresler.aw.entities.person.AddressType</class>
+        <class>org.jmresler.aw.entities.person.Password</class>
+        <class>org.jmresler.aw.entities.person.BusinessEntityAddress</class>
+        <class>org.jmresler.aw.entities.person.VAdditionalContactInfo</class>
+        <class>org.jmresler.aw.entities.production.TransactionHistoryArchive</class>
+        <class>org.jmresler.aw.entities.production.ProductDocument</class>
+        <class>org.jmresler.aw.entities.production.ProductListPriceHistory</class>
+        <class>org.jmresler.aw.entities.production.ProductCategory</class>
+        <class>org.jmresler.aw.entities.production.VProductAndDescription</class>
+        <class>org.jmresler.aw.entities.production.Illustration</class>
+        <class>org.jmresler.aw.entities.production.ProductDescription</class>
+        <class>org.jmresler.aw.entities.production.UnitMeasure</class>
+        <class>org.jmresler.aw.entities.production.ProductModelIllustration</class>
+        <class>org.jmresler.aw.entities.production.VProductModelCatalogDescription</class>
+        <class>org.jmresler.aw.entities.production.Location</class>
+        <class>org.jmresler.aw.entities.production.Culture</class>
+        <class>org.jmresler.aw.entities.production.ProductProductPhoto</class>
+        <class>org.jmresler.aw.entities.production.ScrapReason</class>
+        <class>org.jmresler.aw.entities.production.BillOfMaterials</class>
+        <class>org.jmresler.aw.entities.production.VProductModelInstructions</class>
+        <class>org.jmresler.aw.entities.production.ProductCostHistory</class>
+        <class>org.jmresler.aw.entities.production.ProductInventory</class>
+        <class>org.jmresler.aw.entities.production.WorkOrderRouting</class>
+        <class>org.jmresler.aw.entities.production.WorkOrder</class>
+        <class>org.jmresler.aw.entities.production.ProductModel</class>
+        <class>org.jmresler.aw.entities.production.ProductModelProductDescriptionCulture</class>
+        <class>org.jmresler.aw.entities.production.Document</class>
+        <class>org.jmresler.aw.entities.production.ProductPhoto</class>
+        <class>org.jmresler.aw.entities.production.ProductSubcategory</class>
+        <class>org.jmresler.aw.entities.production.TransactionHistory</class>
+        <class>org.jmresler.aw.entities.production.Product</class>
+        <class>org.jmresler.aw.entities.production.ProductReview</class>
+        <class>org.jmresler.aw.entities.purchasing.ShipMethod</class>
+        <class>org.jmresler.aw.entities.purchasing.VVendorWithAddresses</class>
+        <class>org.jmresler.aw.entities.purchasing.PurchaseOrderDetail</class>
+        <class>org.jmresler.aw.entities.purchasing.PurchaseOrderHeader</class>
+        <class>org.jmresler.aw.entities.purchasing.VVendorWithContacts</class>
+        <class>org.jmresler.aw.entities.purchasing.Vendor</class>
+        <class>org.jmresler.aw.entities.purchasing.ProductVendor</class>
+        <class>org.jmresler.aw.entities.sales.Currency</class>
+        <class>org.jmresler.aw.entities.sales.SalesTerritory</class>
+        <class>org.jmresler.aw.entities.sales.SpecialOffer</class>
+        <class>org.jmresler.aw.entities.sales.SalesOrderDetail</class>
+        <class>org.jmresler.aw.entities.sales.CountryRegionCurrency</class>
+        <class>org.jmresler.aw.entities.sales.VPersonDemographics</class>
+        <class>org.jmresler.aw.entities.sales.Store</class>
+        <class>org.jmresler.aw.entities.sales.SalesTerritoryHistory</class>
+        <class>org.jmresler.aw.entities.sales.SalesPersonQuotaHistory</class>
+        <class>org.jmresler.aw.entities.sales.SalesOrderHeaderSalesReason</class>
+        <class>org.jmresler.aw.entities.sales.SalesOrderHeader</class>
+        <class>org.jmresler.aw.entities.sales.SalesReason</class>
+        <class>org.jmresler.aw.entities.sales.SalesPerson</class>
+        <class>org.jmresler.aw.entities.sales.SalesTaxRate</class>
+        <class>org.jmresler.aw.entities.sales.Customer</class>
+        <class>org.jmresler.aw.entities.sales.VSalesPerson</class>
+        <class>org.jmresler.aw.entities.sales.CurrencyRate</class>
+        <class>org.jmresler.aw.entities.sales.VSalesPersonSalesByFiscalYears</class>
+        <class>org.jmresler.aw.entities.sales.PersonCreditCard</class>
+        <class>org.jmresler.aw.entities.sales.ShoppingCartItem</class>
+        <class>org.jmresler.aw.entities.sales.VStoreWithAddresses</class>
+        <class>org.jmresler.aw.entities.sales.SpecialOfferProduct</class>
+        <class>org.jmresler.aw.entities.sales.VStoreWithContacts</class>
+        <class>org.jmresler.aw.entities.sales.VStoreWithDemographics</class>
+        <class>org.jmresler.aw.entities.sales.VIndividualCustomer</class>
+        <class>org.jmresler.aw.entities.sales.CreditCard</class>
+        <properties>
+            <property name="javax.persistence.jdbc.url"
+                      value="jdbc:sqlserver://localhost:1433;databaseName=AdventureWorks2017;sslProtocol=TLS;trustStoreType=JKS;trustServerCertificate=false;encrypt=false"/>
+            <property name="javax.persistence.jdbc.user" value="swdev"/>
+            <property name="javax.persistence.jdbc.driver" value="com.microsoft.sqlserver.jdbc.SQLServerDriver"/>
+            <property name="javax.persistence.jdbc.password" value="Kadena1988#"/>
+            <property name="hibernate.show_sql" value="true"/>
+        </properties>
+    </persistence-unit>
+</persistence>

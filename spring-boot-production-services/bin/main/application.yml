@@ -3,7 +3,7 @@ logging:
     name: logs/${spring.application.name}.log
   level:
     root: warn
-    '[org.jmresler.hr.aw.svcs]': debug
+    '[org.jmresler.production.aw.svcs]': debug
 
 management:
   endpoints:
@@ -17,7 +17,7 @@ server:
 
 spring:
   application:
-    name: hrsvc
+    name: productionsvcs
   datasource:
     username: swdev
     password: Kadena1988#

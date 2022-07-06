@@ -11,4 +11,4 @@ include ':spring-boot-purchasing-view-services'
 include ':spring-boot-purchasing-services'
 include ':spring-boot-sales-view-services'
 include ':spring-boot-sales-services'
-
+include ':spring-boot-prod-kanban'
