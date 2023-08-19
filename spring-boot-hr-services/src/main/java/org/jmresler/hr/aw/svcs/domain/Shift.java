@@ -1,26 +1,30 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package org.jmresler.hr.aw.svcs.domain;
 
-import lombok.Data;
-import org.jmresler.hr.aw.svcs.util.JsonSerializable;
-
-import javax.persistence.*;
-import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
+
+import javax.persistence.CascadeType;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.FetchType;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.OneToMany;
+import javax.persistence.Table;
+import javax.persistence.Temporal;
+import javax.persistence.TemporalType;
+
+import lombok.Data;
 
 /**
  * @author jmres
  */
 @Data
-@XmlRootElement
 @Entity
 @Table(name = "Shift", schema = "HumanResources")
-public class Shift implements Serializable, JsonSerializable {
+public class Shift implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @Id
@@ -38,7 +42,7 @@ public class Shift implements Serializable, JsonSerializable {
     @Column(name = "ModifiedDate", nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
     private Date modifiedDate;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "shift")
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "shift", fetch = FetchType.EAGER)
     private Collection<EmployeeDepartmentHistory> employeeDepartmentHistoryCollection;
 
 }

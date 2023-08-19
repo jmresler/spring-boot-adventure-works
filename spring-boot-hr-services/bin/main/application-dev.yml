@@ -1,9 +1,0 @@
-spring:
-  datasource:
-    driver-class-name: org.h2.Driver
-    url: jdbc:h2:file:./data/testdb
-    username: app
-    password: app
-  jpa:
-    show-sql: true
-    database: H2

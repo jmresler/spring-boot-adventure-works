@@ -2,6 +2,7 @@
 <project version="4">
   <component name="CompilerConfiguration">
     <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
       <profile name="Gradle Imported" enabled="true">
         <outputRelativeToContentRoot value="true" />
         <processorPath useClasspath="false">
@@ -25,9 +26,18 @@
           <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.24/13a394eed5c4f9efb2a6d956e2086f1d81e857d9/lombok-1.18.24.jar" />
         </processorPath>
         <module name="spring-boot-adventure-works.spring-boot-aw-entities.main" />
+        <module name="spring-boot-adventure-works.spring-boot-prod-kanban.test" />
         <module name="spring-boot-adventure-works.spring-boot-hr-services.test" />
         <module name="spring-boot-adventure-works.spring-boot-hr-view-services.test" />
         <module name="spring-boot-adventure-works.spring-boot-aw-entities.test" />
+      </profile>
+      <profile name="Gradle Imported" enabled="true">
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="false">
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.projectlombok/lombok/1.18.24/13a394eed5c4f9efb2a6d956e2086f1d81e857d9/lombok-1.18.24.jar" />
+          <entry name="$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.springframework.boot/spring-boot-configuration-processor/2.7.1/f36230aff2834f4fa07e1fc30544a6f8ce54bd19/spring-boot-configuration-processor-2.7.1.jar" />
+        </processorPath>
+        <module name="spring-boot-adventure-works.spring-boot-prod-kanban.main" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel target="11" />

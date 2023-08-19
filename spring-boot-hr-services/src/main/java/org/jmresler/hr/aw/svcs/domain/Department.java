@@ -1,26 +1,21 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package org.jmresler.hr.aw.svcs.domain;
 
-import lombok.Data;
-import org.jmresler.hr.aw.svcs.util.JsonSerializable;
-
-import javax.persistence.*;
-import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 import java.util.Collection;
 import java.util.Date;
+
+import javax.persistence.*;
+
+import com.fasterxml.jackson.annotation.JsonManagedReference;
+import lombok.Data;
 
 /**
  * @author jmres
  */
 @Data
-@XmlRootElement
 @Entity
 @Table(name = "Department",  schema = "HumanResources")
-public class Department implements Serializable, JsonSerializable {
+public class Department implements Serializable {
 
     private static final long serialVersionUID = 1L;
 
@@ -35,7 +30,10 @@ public class Department implements Serializable, JsonSerializable {
     @Column(name = "ModifiedDate", nullable = false)
     @Temporal(TemporalType.TIMESTAMP)
     private Date modifiedDate;
-    @OneToMany(cascade = CascadeType.ALL, mappedBy = "department", fetch = FetchType.LAZY)
+    @JsonManagedReference
+    @OneToMany(cascade = CascadeType.ALL, mappedBy = "department", fetch = FetchType.EAGER)
     private Collection<EmployeeDepartmentHistory> employeeDepartmentHistoryCollection;
 
+    @Transient
+    public static final Department EMPTY_DEPARTMENT = new Department();
 }

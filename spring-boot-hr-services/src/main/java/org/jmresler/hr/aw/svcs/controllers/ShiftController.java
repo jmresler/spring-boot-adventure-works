@@ -1,9 +1,10 @@
 package org.jmresler.hr.aw.svcs.controllers;
 
+
 import static org.springframework.http.MediaType.APPLICATION_JSON_VALUE;
 
-import org.jmresler.hr.aw.svcs.domain.Employee;
-import org.jmresler.hr.aw.svcs.services.EmployeeService;
+import org.jmresler.hr.aw.svcs.domain.Shift;
+import org.jmresler.hr.aw.svcs.services.ShiftService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,19 +18,17 @@ import lombok.extern.slf4j.Slf4j;
 @Api
 @Slf4j
 @RestController
-@RequestMapping(path = EmployeeController.PATH)
-public class EmployeeController {
+@RequestMapping(path = ShiftController.PATH)
+public class ShiftController {
 
-    public static final String PATH = "/employee";
+    public static final String PATH = "/shift";
 
     @Autowired
-    protected EmployeeService employeeService;
+    protected ShiftService service;
 
-    @GetMapping(path = "/get-by-id/{id}",
-            consumes = {APPLICATION_JSON_VALUE},
+    @GetMapping(path = "/get-shift-id/{id}",
             produces = {APPLICATION_JSON_VALUE})
-    public ResponseEntity<Employee> getEmployeeById(@PathVariable("id") final Integer id) {
-        var response = employeeService.getEmployeeById(id);
-        return ResponseEntity.ok(response);
+    public ResponseEntity<Shift> getShiftById(@PathVariable("id") final Short id) {
+        return null;
     }
 }

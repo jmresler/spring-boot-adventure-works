@@ -26,7 +26,7 @@ spring:
     hikari:
       transaction-isolation: TRANSACTION_READ_UNCOMMITTED
   jpa:
-    database: sql-server
+    database-platform: org.hibernate.dialect.SQLServerDialect
     generate-ddl: false
     open-in-view: true
     hibernate:

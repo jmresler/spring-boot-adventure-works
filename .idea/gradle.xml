@@ -4,7 +4,6 @@
   <component name="GradleSettings">
     <option name="linkedExternalProjectsSettings">
       <GradleProjectSettings>
-        <option name="distributionType" value="DEFAULT_WRAPPED" />
         <option name="externalProjectPath" value="$PROJECT_DIR$" />
         <option name="gradleHome" value="$USER_HOME$/bin/gradle-7.4" />
         <option name="gradleJvm" value="#JAVA_HOME" />
@@ -16,6 +15,7 @@
             <option value="$PROJECT_DIR$/spring-boot-hr-view-services" />
             <option value="$PROJECT_DIR$/spring-boot-person-services" />
             <option value="$PROJECT_DIR$/spring-boot-person-view-services" />
+            <option value="$PROJECT_DIR$/spring-boot-prod-kanban" />
             <option value="$PROJECT_DIR$/spring-boot-production-services" />
             <option value="$PROJECT_DIR$/spring-boot-production-view-services" />
             <option value="$PROJECT_DIR$/spring-boot-purchasing-services" />

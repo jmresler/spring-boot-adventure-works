@@ -14,13 +14,13 @@ plugins {
     id 'io.spring.dependency-management' version '1.0.11.RELEASE'
     id 'java'
     id 'jacoco'
-    id 'pmd'
+//    id 'pmd'
 }
 
 group = 'org.jmresler.studies'
 version = '1.0.0-SNAPSHOT'
 description = 'Human Resources Endpoints [CRUD]'
-sourceCompatibility = '11'
+sourceCompatibility = '17'
 
 allprojects {
     apply plugin: "com.jfrog.artifactory"
@@ -76,7 +76,6 @@ dependencies {
     runtimeOnly 'com.microsoft.sqlserver:mssql-jdbc'
     annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 
-
     compileOnly "org.projectlombok:lombok:${lombokVersion}"
     annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
     implementation 'io.springfox:springfox-boot-starter:3.0.0'
@@ -87,6 +86,7 @@ dependencies {
     testImplementation 'org.springframework.boot:spring-boot-starter-test'
     testImplementation "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
     testImplementation "org.junit.jupiter:junit-jupiter-api:${junitVersion}"
+    
 }
 
 tasks.named('test') {
@@ -124,13 +124,13 @@ jacocoTestCoverageVerification {
 }
 
 
-pmdMain {
-    ignoreFailures = true
-    rulesMinimumPriority = 5
-    ruleSets = ["category/java/errorprone.xml",
-                "category/java/codestyle.xml",
-                "category/java/design.xml",
-                "category/java/performance.xml",
-                "category/java/multithreading.xml",
-                "category/java/bestpractices.xml"]
-}
+//pmdMain {
+//    ignoreFailures = true
+//    rulesMinimumPriority = 5
+//    ruleSets = ["category/java/errorprone.xml",
+//                "category/java/codestyle.xml",
+//                "category/java/design.xml",
+//                "category/java/performance.xml",
+//                "category/java/multithreading.xml",
+//                "category/java/bestpractices.xml"]
+//}

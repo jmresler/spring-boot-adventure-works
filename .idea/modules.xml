@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-boot-aw-entities/spring-boot-adventure-works.spring-boot-aw-entities.main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-boot-aw-entities/spring-boot-adventure-works.spring-boot-aw-entities.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-boot-aw-entities/spring-boot-adventure-works.spring-boot-aw-entities.test.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-boot-aw-entities/spring-boot-adventure-works.spring-boot-aw-entities.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-boot-hr-services/spring-boot-adventure-works.spring-boot-hr-services.main.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-boot-hr-services/spring-boot-adventure-works.spring-boot-hr-services.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/spring-boot-hr-services/spring-boot-adventure-works.spring-boot-hr-services.test.iml" filepath="$PROJECT_DIR$/.idea/modules/spring-boot-hr-services/spring-boot-adventure-works.spring-boot-hr-services.test.iml" />
+    </modules>
+  </component>
+</project>

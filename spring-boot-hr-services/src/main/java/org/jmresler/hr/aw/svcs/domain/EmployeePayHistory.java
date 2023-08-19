@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package org.jmresler.hr.aw.svcs.domain;
 
 import lombok.Data;
@@ -18,7 +14,7 @@ import java.util.Date;
 @Data
 @Entity
 @Table(name = "EmployeePayHistory", schema = "HumanResources")
-public class EmployeePayHistory implements Serializable, JsonSerializable {
+public class EmployeePayHistory implements Serializable {
 
     private static final long serialVersionUID = 1L;
     @EmbeddedId

@@ -32,6 +32,9 @@
       <console name="SQL Server" type="STANDARD" schema="db_accessadmin" session="Main" />
     </connection>
   </component>
+  <component name="DBNavigator.Project.DatabaseEditorStateManager">
+    <last-used-providers />
+  </component>
   <component name="DBNavigator.Project.DatabaseFileManager">
     <open-files />
   </component>
@@ -77,6 +80,7 @@
           <driver-source value="EXTERNAL" />
           <driver-library value="C:\Users\jmres\bin\sqljdbc_10.2enu\mssql-jdbc-10.2.1.jre8.jar" />
           <driver value="com.microsoft.sqlserver.jdbc.SQLServerDriver" />
+          <url-type value="CUSTOM" />
           <url value="jdbc:sqlserver://localhost:1433;databaseName=AdventureWorks2017;sslProtocol=TLS;trustStoreType=JKS;trustServerCertificate=false;encrypt=false" />
           <type value="USER_PASSWORD" />
           <user value="hrdev" />
@@ -189,6 +193,7 @@
         <object-type name="FUNCTION" sorting-type="NAME" />
         <object-type name="PROCEDURE" sorting-type="NAME" />
         <object-type name="ARGUMENT" sorting-type="POSITION" />
+        <object-type name="TYPE ATTRIBUTE" sorting-type="POSITION" />
       </sorting>
       <default-editors>
         <object-type name="VIEW" editor-type="SELECTION" />
@@ -235,11 +240,11 @@
         <nulls-first value="true" />
         <max-sorting-columns value="4" />
       </sorting>
-      <tracking-columns>
-        <columnNames value="" />
+      <audit-columns>
+        <column-names value="" />
         <visible value="true" />
         <editable value="false" />
-      </tracking-columns>
+      </audit-columns>
     </dataset-grid-settings>
     <dataset-editor-settings>
       <text-editor-popup>
