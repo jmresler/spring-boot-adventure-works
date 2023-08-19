@@ -7,7 +7,10 @@ package org.jmresler.aw.entities.purchasing;
 import lombok.Data;
 import org.jmresler.aw.entities.util.JsonSerializable;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
@@ -18,21 +21,6 @@ import java.io.Serializable;
 @XmlRootElement
 @Entity
 @Table(name = "vVendorWithContacts", catalog = "AdventureWorks2017", schema = "Purchasing")
-@NamedQueries({
-        @NamedQuery(name = "VVendorWithContacts.selectCount", query = "SELECT COUNT(v) FROM VVendorWithContacts v"),
-        @NamedQuery(name = "VVendorWithContacts.findAll", query = "SELECT v FROM VVendorWithContacts v"),
-        @NamedQuery(name = "VVendorWithContacts.findByBusinessEntityID", query = "SELECT v FROM VVendorWithContacts v WHERE v.businessEntityID = :businessEntityID"),
-        @NamedQuery(name = "VVendorWithContacts.findByName", query = "SELECT v FROM VVendorWithContacts v WHERE v.name = :name"),
-        @NamedQuery(name = "VVendorWithContacts.findByContactType", query = "SELECT v FROM VVendorWithContacts v WHERE v.contactType = :contactType"),
-        @NamedQuery(name = "VVendorWithContacts.findByTitle", query = "SELECT v FROM VVendorWithContacts v WHERE v.title = :title"),
-        @NamedQuery(name = "VVendorWithContacts.findByFirstName", query = "SELECT v FROM VVendorWithContacts v WHERE v.firstName = :firstName"),
-        @NamedQuery(name = "VVendorWithContacts.findByMiddleName", query = "SELECT v FROM VVendorWithContacts v WHERE v.middleName = :middleName"),
-        @NamedQuery(name = "VVendorWithContacts.findByLastName", query = "SELECT v FROM VVendorWithContacts v WHERE v.lastName = :lastName"),
-        @NamedQuery(name = "VVendorWithContacts.findBySuffix", query = "SELECT v FROM VVendorWithContacts v WHERE v.suffix = :suffix"),
-        @NamedQuery(name = "VVendorWithContacts.findByPhoneNumber", query = "SELECT v FROM VVendorWithContacts v WHERE v.phoneNumber = :phoneNumber"),
-        @NamedQuery(name = "VVendorWithContacts.findByPhoneNumberType", query = "SELECT v FROM VVendorWithContacts v WHERE v.phoneNumberType = :phoneNumberType"),
-        @NamedQuery(name = "VVendorWithContacts.findByEmailAddress", query = "SELECT v FROM VVendorWithContacts v WHERE v.emailAddress = :emailAddress"),
-        @NamedQuery(name = "VVendorWithContacts.findByEmailPromotion", query = "SELECT v FROM VVendorWithContacts v WHERE v.emailPromotion = :emailPromotion")})
 public class VVendorWithContacts implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

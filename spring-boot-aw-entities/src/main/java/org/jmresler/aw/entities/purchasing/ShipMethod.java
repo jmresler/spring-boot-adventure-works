@@ -21,15 +21,6 @@ import java.util.Date;
 @XmlRootElement
 @Entity
 @Table(name = "ShipMethod", catalog = "AdventureWorks2017", schema = "Purchasing")
-@NamedQueries({
-        @NamedQuery(name = "ShipMethod.selectCount", query = "SELECT COUNT(s) FROM ShipMethod s"),
-        @NamedQuery(name = "ShipMethod.findAll", query = "SELECT s FROM ShipMethod s"),
-        @NamedQuery(name = "ShipMethod.findByShipMethodID", query = "SELECT s FROM ShipMethod s WHERE s.shipMethodID = :shipMethodID"),
-        @NamedQuery(name = "ShipMethod.findByName", query = "SELECT s FROM ShipMethod s WHERE s.name = :name"),
-        @NamedQuery(name = "ShipMethod.findByShipBase", query = "SELECT s FROM ShipMethod s WHERE s.shipBase = :shipBase"),
-        @NamedQuery(name = "ShipMethod.findByShipRate", query = "SELECT s FROM ShipMethod s WHERE s.shipRate = :shipRate"),
-        @NamedQuery(name = "ShipMethod.findByRowguid", query = "SELECT s FROM ShipMethod s WHERE s.rowguid = :rowguid"),
-        @NamedQuery(name = "ShipMethod.findByModifiedDate", query = "SELECT s FROM ShipMethod s WHERE s.modifiedDate = :modifiedDate")})
 public class ShipMethod implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

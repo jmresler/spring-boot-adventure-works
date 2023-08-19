@@ -20,16 +20,6 @@ import java.util.Date;
 @XmlRootElement
 @Entity
 @Table(name = "StateProvince", catalog = "AdventureWorks2017", schema = "Person")
-@NamedQueries({
-        @NamedQuery(name = "StateProvince.selectCount", query = "SELECT COUNT(s) FROM StateProvince s"),
-        @NamedQuery(name = "StateProvince.findAll", query = "SELECT s FROM StateProvince s"),
-        @NamedQuery(name = "StateProvince.findByStateProvinceID", query = "SELECT s FROM StateProvince s WHERE s.stateProvinceID = :stateProvinceID"),
-        @NamedQuery(name = "StateProvince.findByStateProvinceCode", query = "SELECT s FROM StateProvince s WHERE s.stateProvinceCode = :stateProvinceCode"),
-        @NamedQuery(name = "StateProvince.findByIsOnlyStateProvinceFlag", query = "SELECT s FROM StateProvince s WHERE s.isOnlyStateProvinceFlag = :isOnlyStateProvinceFlag"),
-        @NamedQuery(name = "StateProvince.findByName", query = "SELECT s FROM StateProvince s WHERE s.name = :name"),
-        @NamedQuery(name = "StateProvince.findByTerritoryID", query = "SELECT s FROM StateProvince s WHERE s.territoryID = :territoryID"),
-        @NamedQuery(name = "StateProvince.findByRowguid", query = "SELECT s FROM StateProvince s WHERE s.rowguid = :rowguid"),
-        @NamedQuery(name = "StateProvince.findByModifiedDate", query = "SELECT s FROM StateProvince s WHERE s.modifiedDate = :modifiedDate")})
 public class StateProvince implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

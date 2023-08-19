@@ -19,15 +19,6 @@ import java.util.Date;
 @XmlRootElement
 @Entity
 @Table(name = "EmployeeDepartmentHistory", catalog = "AdventureWorks2017", schema = "HumanResources")
-@NamedQueries({
-        @NamedQuery(name = "EmployeeDepartmentHistory.selectCount", query = "SELECT COUNT(e) FROM EmployeeDepartmentHistory e"),
-        @NamedQuery(name = "EmployeeDepartmentHistory.findAll", query = "SELECT e FROM EmployeeDepartmentHistory e"),
-        @NamedQuery(name = "EmployeeDepartmentHistory.findByBusinessEntityID", query = "SELECT e FROM EmployeeDepartmentHistory e WHERE e.employeeDepartmentHistoryPK.businessEntityID = :businessEntityID"),
-        @NamedQuery(name = "EmployeeDepartmentHistory.findByDepartmentID", query = "SELECT e FROM EmployeeDepartmentHistory e WHERE e.employeeDepartmentHistoryPK.departmentID = :departmentID"),
-        @NamedQuery(name = "EmployeeDepartmentHistory.findByShiftID", query = "SELECT e FROM EmployeeDepartmentHistory e WHERE e.employeeDepartmentHistoryPK.shiftID = :shiftID"),
-        @NamedQuery(name = "EmployeeDepartmentHistory.findByStartDate", query = "SELECT e FROM EmployeeDepartmentHistory e WHERE e.employeeDepartmentHistoryPK.startDate = :startDate"),
-        @NamedQuery(name = "EmployeeDepartmentHistory.findByEndDate", query = "SELECT e FROM EmployeeDepartmentHistory e WHERE e.endDate = :endDate"),
-        @NamedQuery(name = "EmployeeDepartmentHistory.findByModifiedDate", query = "SELECT e FROM EmployeeDepartmentHistory e WHERE e.modifiedDate = :modifiedDate")})
 public class EmployeeDepartmentHistory implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

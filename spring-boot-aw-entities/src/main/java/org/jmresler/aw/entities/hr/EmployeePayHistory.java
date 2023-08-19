@@ -18,14 +18,6 @@ import java.util.Date;
 @Data
 @Entity
 @Table(name = "EmployeePayHistory", catalog = "AdventureWorks2017", schema = "HumanResources")
-@NamedQueries({
-        @NamedQuery(name = "EmployeePayHistory.selectCount", query = "SELECT COUNT(e) FROM EmployeePayHistory e"),
-        @NamedQuery(name = "EmployeePayHistory.findAll", query = "SELECT e FROM EmployeePayHistory e"),
-        @NamedQuery(name = "EmployeePayHistory.findByBusinessEntityID", query = "SELECT e FROM EmployeePayHistory e WHERE e.employeePayHistoryPK.businessEntityID = :businessEntityID"),
-        @NamedQuery(name = "EmployeePayHistory.findByRateChangeDate", query = "SELECT e FROM EmployeePayHistory e WHERE e.employeePayHistoryPK.rateChangeDate = :rateChangeDate"),
-        @NamedQuery(name = "EmployeePayHistory.findByRate", query = "SELECT e FROM EmployeePayHistory e WHERE e.rate = :rate"),
-        @NamedQuery(name = "EmployeePayHistory.findByPayFrequency", query = "SELECT e FROM EmployeePayHistory e WHERE e.payFrequency = :payFrequency"),
-        @NamedQuery(name = "EmployeePayHistory.findByModifiedDate", query = "SELECT e FROM EmployeePayHistory e WHERE e.modifiedDate = :modifiedDate")})
 public class EmployeePayHistory implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

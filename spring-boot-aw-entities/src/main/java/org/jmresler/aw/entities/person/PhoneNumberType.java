@@ -20,12 +20,6 @@ import java.util.Date;
 @XmlRootElement
 @Entity
 @Table(name = "PhoneNumberType", catalog = "AdventureWorks2017", schema = "Person")
-@NamedQueries({
-        @NamedQuery(name = "PhoneNumberType.selectCount", query = "SELECT COUNT(p) FROM PhoneNumberType p"),
-        @NamedQuery(name = "PhoneNumberType.findAll", query = "SELECT p FROM PhoneNumberType p"),
-        @NamedQuery(name = "PhoneNumberType.findByPhoneNumberTypeID", query = "SELECT p FROM PhoneNumberType p WHERE p.phoneNumberTypeID = :phoneNumberTypeID"),
-        @NamedQuery(name = "PhoneNumberType.findByName", query = "SELECT p FROM PhoneNumberType p WHERE p.name = :name"),
-        @NamedQuery(name = "PhoneNumberType.findByModifiedDate", query = "SELECT p FROM PhoneNumberType p WHERE p.modifiedDate = :modifiedDate")})
 public class PhoneNumberType implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

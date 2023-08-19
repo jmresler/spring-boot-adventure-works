@@ -20,16 +20,6 @@ import java.util.Date;
 @XmlRootElement
 @Entity
 @Table(name = "Address", catalog = "AdventureWorks2017", schema = "Person")
-@NamedQueries({
-        @NamedQuery(name = "Address.selectCount", query = "SELECT COUNT(a) FROM Address a"),
-        @NamedQuery(name = "Address.findAll", query = "SELECT a FROM Address a"),
-        @NamedQuery(name = "Address.findByAddressID", query = "SELECT a FROM Address a WHERE a.addressID = :addressID"),
-        @NamedQuery(name = "Address.findByAddressLine1", query = "SELECT a FROM Address a WHERE a.addressLine1 = :addressLine1"),
-        @NamedQuery(name = "Address.findByAddressLine2", query = "SELECT a FROM Address a WHERE a.addressLine2 = :addressLine2"),
-        @NamedQuery(name = "Address.findByCity", query = "SELECT a FROM Address a WHERE a.city = :city"),
-        @NamedQuery(name = "Address.findByPostalCode", query = "SELECT a FROM Address a WHERE a.postalCode = :postalCode"),
-        @NamedQuery(name = "Address.findByRowguid", query = "SELECT a FROM Address a WHERE a.rowguid = :rowguid"),
-        @NamedQuery(name = "Address.findByModifiedDate", query = "SELECT a FROM Address a WHERE a.modifiedDate = :modifiedDate")})
 public class Address implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

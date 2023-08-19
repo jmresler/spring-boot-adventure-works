@@ -7,7 +7,10 @@ package org.jmresler.aw.entities.person;
 import lombok.Data;
 import org.jmresler.aw.entities.util.JsonSerializable;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
@@ -18,16 +21,6 @@ import java.io.Serializable;
 @XmlRootElement
 @Entity
 @Table(name = "vStateProvinceCountryRegion", catalog = "AdventureWorks2017", schema = "Person")
-@NamedQueries({
-        @NamedQuery(name = "VStateProvinceCountryRegion.selectCount", query = "SELECT COUNT(v) FROM VStateProvinceCountryRegion v"),
-        @NamedQuery(name = "VStateProvinceCountryRegion.findAll", query = "SELECT v FROM VStateProvinceCountryRegion v"),
-        @NamedQuery(name = "VStateProvinceCountryRegion.findByStateProvinceID", query = "SELECT v FROM VStateProvinceCountryRegion v WHERE v.stateProvinceID = :stateProvinceID"),
-        @NamedQuery(name = "VStateProvinceCountryRegion.findByStateProvinceCode", query = "SELECT v FROM VStateProvinceCountryRegion v WHERE v.stateProvinceCode = :stateProvinceCode"),
-        @NamedQuery(name = "VStateProvinceCountryRegion.findByIsOnlyStateProvinceFlag", query = "SELECT v FROM VStateProvinceCountryRegion v WHERE v.isOnlyStateProvinceFlag = :isOnlyStateProvinceFlag"),
-        @NamedQuery(name = "VStateProvinceCountryRegion.findByStateProvinceName", query = "SELECT v FROM VStateProvinceCountryRegion v WHERE v.stateProvinceName = :stateProvinceName"),
-        @NamedQuery(name = "VStateProvinceCountryRegion.findByTerritoryID", query = "SELECT v FROM VStateProvinceCountryRegion v WHERE v.territoryID = :territoryID"),
-        @NamedQuery(name = "VStateProvinceCountryRegion.findByCountryRegionCode", query = "SELECT v FROM VStateProvinceCountryRegion v WHERE v.countryRegionCode = :countryRegionCode"),
-        @NamedQuery(name = "VStateProvinceCountryRegion.findByCountryRegionName", query = "SELECT v FROM VStateProvinceCountryRegion v WHERE v.countryRegionName = :countryRegionName")})
 public class VStateProvinceCountryRegion implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

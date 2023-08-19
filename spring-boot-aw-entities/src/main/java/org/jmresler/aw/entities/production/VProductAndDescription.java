@@ -7,7 +7,10 @@ package org.jmresler.aw.entities.production;
 import lombok.Data;
 import org.jmresler.aw.entities.util.JsonSerializable;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
@@ -18,14 +21,6 @@ import java.io.Serializable;
 @XmlRootElement
 @Entity
 @Table(name = "vProductAndDescription", catalog = "AdventureWorks2017", schema = "Production")
-@NamedQueries({
-        @NamedQuery(name = "VProductAndDescription.selectCount", query = "SELECT COUNT(v) FROM VProductAndDescription v"),
-        @NamedQuery(name = "VProductAndDescription.findAll", query = "SELECT v FROM VProductAndDescription v"),
-        @NamedQuery(name = "VProductAndDescription.findByProductID", query = "SELECT v FROM VProductAndDescription v WHERE v.productID = :productID"),
-        @NamedQuery(name = "VProductAndDescription.findByName", query = "SELECT v FROM VProductAndDescription v WHERE v.name = :name"),
-        @NamedQuery(name = "VProductAndDescription.findByProductModel", query = "SELECT v FROM VProductAndDescription v WHERE v.productModel = :productModel"),
-        @NamedQuery(name = "VProductAndDescription.findByCultureID", query = "SELECT v FROM VProductAndDescription v WHERE v.cultureID = :cultureID"),
-        @NamedQuery(name = "VProductAndDescription.findByDescription", query = "SELECT v FROM VProductAndDescription v WHERE v.description = :description")})
 public class VProductAndDescription implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

@@ -22,14 +22,6 @@ import java.util.Date;
 @Table(name = "Shift", catalog = "AdventureWorks2017", schema = "HumanResources", uniqueConstraints = {
         @UniqueConstraint(columnNames = {"StartTime", "EndTime"}),
         @UniqueConstraint(columnNames = {"Name"})})
-@NamedQueries({
-        @NamedQuery(name = "Shift.selectCount", query = "SELECT COUNT(s) FROM Shift s"),
-        @NamedQuery(name = "Shift.findAll", query = "SELECT s FROM Shift s"),
-        @NamedQuery(name = "Shift.findByShiftID", query = "SELECT s FROM Shift s WHERE s.shiftID = :shiftID"),
-        @NamedQuery(name = "Shift.findByName", query = "SELECT s FROM Shift s WHERE s.name = :name"),
-        @NamedQuery(name = "Shift.findByStartTime", query = "SELECT s FROM Shift s WHERE s.startTime = :startTime"),
-        @NamedQuery(name = "Shift.findByEndTime", query = "SELECT s FROM Shift s WHERE s.endTime = :endTime"),
-        @NamedQuery(name = "Shift.findByModifiedDate", query = "SELECT s FROM Shift s WHERE s.modifiedDate = :modifiedDate")})
 public class Shift implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

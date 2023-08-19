@@ -19,14 +19,6 @@ import java.util.Date;
 @XmlRootElement
 @Entity
 @Table(name = "Password", catalog = "AdventureWorks2017", schema = "Person")
-@NamedQueries({
-        @NamedQuery(name = "Password.selectCount", query = "SELECT COUNT(p) FROM Password p"),
-        @NamedQuery(name = "Password.findAll", query = "SELECT p FROM Password p"),
-        @NamedQuery(name = "Password.findByBusinessEntityID", query = "SELECT p FROM Password p WHERE p.businessEntityID = :businessEntityID"),
-        @NamedQuery(name = "Password.findByPasswordHash", query = "SELECT p FROM Password p WHERE p.passwordHash = :passwordHash"),
-        @NamedQuery(name = "Password.findByPasswordSalt", query = "SELECT p FROM Password p WHERE p.passwordSalt = :passwordSalt"),
-        @NamedQuery(name = "Password.findByRowguid", query = "SELECT p FROM Password p WHERE p.rowguid = :rowguid"),
-        @NamedQuery(name = "Password.findByModifiedDate", query = "SELECT p FROM Password p WHERE p.modifiedDate = :modifiedDate")})
 public class Password implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

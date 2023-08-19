@@ -7,7 +7,10 @@ package org.jmresler.aw.entities.sales;
 import lombok.Data;
 import org.jmresler.aw.entities.util.JsonSerializable;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
@@ -18,18 +21,6 @@ import java.io.Serializable;
 @XmlRootElement
 @Entity
 @Table(name = "vStoreWithAddresses", catalog = "AdventureWorks2017", schema = "Sales")
-@NamedQueries({
-        @NamedQuery(name = "VStoreWithAddresses.selectCount", query = "SELECT COUNT(v) FROM VStoreWithAddresses v"),
-        @NamedQuery(name = "VStoreWithAddresses.findAll", query = "SELECT v FROM VStoreWithAddresses v"),
-        @NamedQuery(name = "VStoreWithAddresses.findByBusinessEntityID", query = "SELECT v FROM VStoreWithAddresses v WHERE v.businessEntityID = :businessEntityID"),
-        @NamedQuery(name = "VStoreWithAddresses.findByName", query = "SELECT v FROM VStoreWithAddresses v WHERE v.name = :name"),
-        @NamedQuery(name = "VStoreWithAddresses.findByAddressType", query = "SELECT v FROM VStoreWithAddresses v WHERE v.addressType = :addressType"),
-        @NamedQuery(name = "VStoreWithAddresses.findByAddressLine1", query = "SELECT v FROM VStoreWithAddresses v WHERE v.addressLine1 = :addressLine1"),
-        @NamedQuery(name = "VStoreWithAddresses.findByAddressLine2", query = "SELECT v FROM VStoreWithAddresses v WHERE v.addressLine2 = :addressLine2"),
-        @NamedQuery(name = "VStoreWithAddresses.findByCity", query = "SELECT v FROM VStoreWithAddresses v WHERE v.city = :city"),
-        @NamedQuery(name = "VStoreWithAddresses.findByStateProvinceName", query = "SELECT v FROM VStoreWithAddresses v WHERE v.stateProvinceName = :stateProvinceName"),
-        @NamedQuery(name = "VStoreWithAddresses.findByPostalCode", query = "SELECT v FROM VStoreWithAddresses v WHERE v.postalCode = :postalCode"),
-        @NamedQuery(name = "VStoreWithAddresses.findByCountryRegionName", query = "SELECT v FROM VStoreWithAddresses v WHERE v.countryRegionName = :countryRegionName")})
 public class VStoreWithAddresses implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

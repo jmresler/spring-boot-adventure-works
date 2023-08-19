@@ -19,12 +19,6 @@ import java.util.Date;
 @XmlRootElement
 @Entity
 @Table(name = "JobCandidate", catalog = "AdventureWorks2017", schema = "HumanResources")
-@NamedQueries({
-        @NamedQuery(name = "JobCandidate.selectCount", query = "SELECT COUNT(j) FROM JobCandidate j"),
-        @NamedQuery(name = "JobCandidate.findAll", query = "SELECT j FROM JobCandidate j"),
-        @NamedQuery(name = "JobCandidate.findByJobCandidateID", query = "SELECT j FROM JobCandidate j WHERE j.jobCandidateID = :jobCandidateID"),
-        @NamedQuery(name = "JobCandidate.findByResume", query = "SELECT j FROM JobCandidate j WHERE j.resume = :resume"),
-        @NamedQuery(name = "JobCandidate.findByModifiedDate", query = "SELECT j FROM JobCandidate j WHERE j.modifiedDate = :modifiedDate")})
 public class JobCandidate implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

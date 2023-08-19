@@ -21,12 +21,6 @@ import java.util.Date;
 @Entity
 @Table(name = "UnitMeasure", catalog = "AdventureWorks2017", schema = "Production", uniqueConstraints = {
         @UniqueConstraint(columnNames = {"Name"})})
-@NamedQueries({
-        @NamedQuery(name = "UnitMeasure.selectCount", query = "SELECT COUNT(u) FROM UnitMeasure u"),
-        @NamedQuery(name = "UnitMeasure.findAll", query = "SELECT u FROM UnitMeasure u"),
-        @NamedQuery(name = "UnitMeasure.findByUnitMeasureCode", query = "SELECT u FROM UnitMeasure u WHERE u.unitMeasureCode = :unitMeasureCode"),
-        @NamedQuery(name = "UnitMeasure.findByName", query = "SELECT u FROM UnitMeasure u WHERE u.name = :name"),
-        @NamedQuery(name = "UnitMeasure.findByModifiedDate", query = "SELECT u FROM UnitMeasure u WHERE u.modifiedDate = :modifiedDate")})
 public class UnitMeasure implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

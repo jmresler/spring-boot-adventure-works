@@ -20,17 +20,6 @@ import java.util.Date;
 @XmlRootElement
 @Entity
 @Table(name = "WorkOrder", catalog = "AdventureWorks2017", schema = "Production")
-@NamedQueries({
-        @NamedQuery(name = "WorkOrder.selectCount", query = "SELECT COUNT(w) FROM WorkOrder w"),
-        @NamedQuery(name = "WorkOrder.findAll", query = "SELECT w FROM WorkOrder w"),
-        @NamedQuery(name = "WorkOrder.findByWorkOrderID", query = "SELECT w FROM WorkOrder w WHERE w.workOrderID = :workOrderID"),
-        @NamedQuery(name = "WorkOrder.findByOrderQty", query = "SELECT w FROM WorkOrder w WHERE w.orderQty = :orderQty"),
-        @NamedQuery(name = "WorkOrder.findByStockedQty", query = "SELECT w FROM WorkOrder w WHERE w.stockedQty = :stockedQty"),
-        @NamedQuery(name = "WorkOrder.findByScrappedQty", query = "SELECT w FROM WorkOrder w WHERE w.scrappedQty = :scrappedQty"),
-        @NamedQuery(name = "WorkOrder.findByStartDate", query = "SELECT w FROM WorkOrder w WHERE w.startDate = :startDate"),
-        @NamedQuery(name = "WorkOrder.findByEndDate", query = "SELECT w FROM WorkOrder w WHERE w.endDate = :endDate"),
-        @NamedQuery(name = "WorkOrder.findByDueDate", query = "SELECT w FROM WorkOrder w WHERE w.dueDate = :dueDate"),
-        @NamedQuery(name = "WorkOrder.findByModifiedDate", query = "SELECT w FROM WorkOrder w WHERE w.modifiedDate = :modifiedDate")})
 public class WorkOrder implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

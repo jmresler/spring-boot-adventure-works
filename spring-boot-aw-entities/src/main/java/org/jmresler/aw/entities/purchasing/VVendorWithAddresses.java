@@ -7,7 +7,10 @@ package org.jmresler.aw.entities.purchasing;
 import lombok.Data;
 import org.jmresler.aw.entities.util.JsonSerializable;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
@@ -18,18 +21,6 @@ import java.io.Serializable;
 @XmlRootElement
 @Entity
 @Table(name = "vVendorWithAddresses", catalog = "AdventureWorks2017", schema = "Purchasing")
-@NamedQueries({
-        @NamedQuery(name = "VVendorWithAddresses.selectCount", query = "SELECT COUNT(v) FROM VVendorWithAddresses v"),
-        @NamedQuery(name = "VVendorWithAddresses.findAll", query = "SELECT v FROM VVendorWithAddresses v"),
-        @NamedQuery(name = "VVendorWithAddresses.findByBusinessEntityID", query = "SELECT v FROM VVendorWithAddresses v WHERE v.businessEntityID = :businessEntityID"),
-        @NamedQuery(name = "VVendorWithAddresses.findByName", query = "SELECT v FROM VVendorWithAddresses v WHERE v.name = :name"),
-        @NamedQuery(name = "VVendorWithAddresses.findByAddressType", query = "SELECT v FROM VVendorWithAddresses v WHERE v.addressType = :addressType"),
-        @NamedQuery(name = "VVendorWithAddresses.findByAddressLine1", query = "SELECT v FROM VVendorWithAddresses v WHERE v.addressLine1 = :addressLine1"),
-        @NamedQuery(name = "VVendorWithAddresses.findByAddressLine2", query = "SELECT v FROM VVendorWithAddresses v WHERE v.addressLine2 = :addressLine2"),
-        @NamedQuery(name = "VVendorWithAddresses.findByCity", query = "SELECT v FROM VVendorWithAddresses v WHERE v.city = :city"),
-        @NamedQuery(name = "VVendorWithAddresses.findByStateProvinceName", query = "SELECT v FROM VVendorWithAddresses v WHERE v.stateProvinceName = :stateProvinceName"),
-        @NamedQuery(name = "VVendorWithAddresses.findByPostalCode", query = "SELECT v FROM VVendorWithAddresses v WHERE v.postalCode = :postalCode"),
-        @NamedQuery(name = "VVendorWithAddresses.findByCountryRegionName", query = "SELECT v FROM VVendorWithAddresses v WHERE v.countryRegionName = :countryRegionName")})
 public class VVendorWithAddresses implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

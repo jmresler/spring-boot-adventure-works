@@ -1,8 +1,11 @@
 buildscript {
+    ext {
+        lombokVersion = "1.18.24"
+        junitVersion = "5.10.0"
+    }
     repositories {
         mavenCentral()
-
-    }
+   }
     dependencies {
     }
 }
@@ -11,15 +14,15 @@ plugins {
     id 'java'
     id 'java-library'
     id 'jacoco'
-    id 'pmd'
+//    id 'pmd'
 }
 
 description = 'Spring Boot JPA Entities for Adventure Works 2017 DB'
 
 
 java {
-    sourceCompatibility = "11"
-    targetCompatibility = "11"
+    sourceCompatibility = "17"
+    targetCompatibility = "17"
 }
 
 repositories {
@@ -43,14 +46,14 @@ dependencies {
     implementation 'org.eclipse.persistence:javax.persistence:2.2.1'
     implementation 'org.eclipse.persistence:org.eclipse.persistence.jpa.modelgen.processor:2.7.9'
 
-    compileOnly 'org.projectlombok:lombok:1.18.24'
-    annotationProcessor 'org.projectlombok:lombok:1.18.24'
-    testCompileOnly 'org.projectlombok:lombok:1.18.24'
-    testAnnotationProcessor 'org.projectlombok:lombok:1.18.24'
+    compileOnly "org.projectlombok:lombok:${lombokVersion}"
+    annotationProcessor "org.projectlombok:lombok:${lombokVersion}"
+    testCompileOnly "org.projectlombok:lombok:${lombokVersion}"
+    testAnnotationProcessor "org.projectlombok:lombok:${lombokVersion}"
 
 
-    testImplementation 'org.junit.jupiter:junit-jupiter:5.7.2'
-    testImplementation 'org.junit.jupiter:junit-jupiter-engine:5.7.2'
+    testImplementation "org.junit.jupiter:junit-jupiter:${junitVersion}"
+    testImplementation "org.junit.jupiter:junit-jupiter-engine:${junitVersion}"
 }
 
 test {
@@ -89,14 +92,14 @@ jacoco {
 }
 
 
-pmd {
-    ignoreFailures = true
-    toolVersion = "6.21.0"
-    rulesMinimumPriority = 5
-    ruleSets = ["category/java/errorprone.xml",
-                "category/java/design.xml",
-                "category/java/codestyle.xml",
-                "category/java/performance.xml",
-                "category/java/multithreading.xml",
-                "category/java/bestpractices.xml"]
-}
+//pmd {
+//    ignoreFailures = true
+//    toolVersion = "6.21.0"
+//    rulesMinimumPriority = 5
+//    ruleSets = ["category/java/errorprone.xml",
+//                "category/java/design.xml",
+//                "category/java/codestyle.xml",
+//                "category/java/performance.xml",
+//                "category/java/multithreading.xml",
+//                "category/java/bestpractices.xml"]
+//}

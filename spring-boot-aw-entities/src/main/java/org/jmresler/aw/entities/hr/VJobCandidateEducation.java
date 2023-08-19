@@ -19,22 +19,6 @@ import java.util.Date;
 @XmlRootElement
 @Entity
 @Table(name = "vJobCandidateEducation", catalog = "AdventureWorks2017", schema = "HumanResources")
-@NamedQueries({
-        @NamedQuery(name = "VJobCandidateEducation.selectCount", query = "SELECT COUNT(v) FROM VJobCandidateEducation v"),
-        @NamedQuery(name = "VJobCandidateEducation.findAll", query = "SELECT v FROM VJobCandidateEducation v"),
-        @NamedQuery(name = "VJobCandidateEducation.findByJobCandidateID", query = "SELECT v FROM VJobCandidateEducation v WHERE v.jobCandidateID = :jobCandidateID"),
-        @NamedQuery(name = "VJobCandidateEducation.findByLevel", query = "SELECT v FROM VJobCandidateEducation v WHERE v.level = :level"),
-        @NamedQuery(name = "VJobCandidateEducation.findByStartDate", query = "SELECT v FROM VJobCandidateEducation v WHERE v.startDate = :startDate"),
-        @NamedQuery(name = "VJobCandidateEducation.findByEndDate", query = "SELECT v FROM VJobCandidateEducation v WHERE v.endDate = :endDate"),
-        @NamedQuery(name = "VJobCandidateEducation.findByDegree", query = "SELECT v FROM VJobCandidateEducation v WHERE v.degree = :degree"),
-        @NamedQuery(name = "VJobCandidateEducation.findByMajor", query = "SELECT v FROM VJobCandidateEducation v WHERE v.major = :major"),
-        @NamedQuery(name = "VJobCandidateEducation.findByMinor", query = "SELECT v FROM VJobCandidateEducation v WHERE v.minor = :minor"),
-        @NamedQuery(name = "VJobCandidateEducation.findByGpa", query = "SELECT v FROM VJobCandidateEducation v WHERE v.gpa = :gpa"),
-        @NamedQuery(name = "VJobCandidateEducation.findByGPAScale", query = "SELECT v FROM VJobCandidateEducation v WHERE v.gPAScale = :gPAScale"),
-        @NamedQuery(name = "VJobCandidateEducation.findBySchool", query = "SELECT v FROM VJobCandidateEducation v WHERE v.school = :school"),
-        @NamedQuery(name = "VJobCandidateEducation.findByCountryRegion", query = "SELECT v FROM VJobCandidateEducation v WHERE v.countryRegion = :countryRegion"),
-        @NamedQuery(name = "VJobCandidateEducation.findByState", query = "SELECT v FROM VJobCandidateEducation v WHERE v.state = :state"),
-        @NamedQuery(name = "VJobCandidateEducation.findByCity", query = "SELECT v FROM VJobCandidateEducation v WHERE v.city = :city")})
 public class VJobCandidateEducation implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

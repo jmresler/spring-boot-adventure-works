@@ -19,19 +19,6 @@ import java.util.Date;
 @XmlRootElement
 @Entity
 @Table(name = "vEmployeeDepartment", catalog = "AdventureWorks2017", schema = "HumanResources")
-@NamedQueries({
-        @NamedQuery(name = "VEmployeeDepartment.selectCount", query = "SELECT COUNT(v) FROM VEmployeeDepartment v"),
-        @NamedQuery(name = "VEmployeeDepartment.findAll", query = "SELECT v FROM VEmployeeDepartment v"),
-        @NamedQuery(name = "VEmployeeDepartment.findByBusinessEntityID", query = "SELECT v FROM VEmployeeDepartment v WHERE v.businessEntityID = :businessEntityID"),
-        @NamedQuery(name = "VEmployeeDepartment.findByTitle", query = "SELECT v FROM VEmployeeDepartment v WHERE v.title = :title"),
-        @NamedQuery(name = "VEmployeeDepartment.findByFirstName", query = "SELECT v FROM VEmployeeDepartment v WHERE v.firstName = :firstName"),
-        @NamedQuery(name = "VEmployeeDepartment.findByMiddleName", query = "SELECT v FROM VEmployeeDepartment v WHERE v.middleName = :middleName"),
-        @NamedQuery(name = "VEmployeeDepartment.findByLastName", query = "SELECT v FROM VEmployeeDepartment v WHERE v.lastName = :lastName"),
-        @NamedQuery(name = "VEmployeeDepartment.findBySuffix", query = "SELECT v FROM VEmployeeDepartment v WHERE v.suffix = :suffix"),
-        @NamedQuery(name = "VEmployeeDepartment.findByJobTitle", query = "SELECT v FROM VEmployeeDepartment v WHERE v.jobTitle = :jobTitle"),
-        @NamedQuery(name = "VEmployeeDepartment.findByDepartment", query = "SELECT v FROM VEmployeeDepartment v WHERE v.department = :department"),
-        @NamedQuery(name = "VEmployeeDepartment.findByGroupName", query = "SELECT v FROM VEmployeeDepartment v WHERE v.groupName = :groupName"),
-        @NamedQuery(name = "VEmployeeDepartment.findByStartDate", query = "SELECT v FROM VEmployeeDepartment v WHERE v.startDate = :startDate")})
 public class VEmployeeDepartment implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

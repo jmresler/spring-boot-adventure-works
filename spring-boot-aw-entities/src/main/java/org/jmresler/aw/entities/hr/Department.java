@@ -1,7 +1,3 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
 package org.jmresler.aw.entities.hr;
 
 import lombok.Data;
@@ -21,13 +17,6 @@ import java.util.Date;
 @Entity
 @Table(name = "Department", catalog = "AdventureWorks2017", schema = "HumanResources", uniqueConstraints = {
         @UniqueConstraint(columnNames = {"Name"})})
-@NamedQueries({
-        @NamedQuery(name = "Department.selectCount", query = "SELECT COUNT(d) FROM Department d"),
-        @NamedQuery(name = "Department.findAll", query = "SELECT d FROM Department d"),
-        @NamedQuery(name = "Department.findByDepartmentID", query = "SELECT d FROM Department d WHERE d.departmentID = :departmentID"),
-        @NamedQuery(name = "Department.findByName", query = "SELECT d FROM Department d WHERE d.name = :name"),
-        @NamedQuery(name = "Department.findByGroupName", query = "SELECT d FROM Department d WHERE d.groupName = :groupName"),
-        @NamedQuery(name = "Department.findByModifiedDate", query = "SELECT d FROM Department d WHERE d.modifiedDate = :modifiedDate")})
 public class Department implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

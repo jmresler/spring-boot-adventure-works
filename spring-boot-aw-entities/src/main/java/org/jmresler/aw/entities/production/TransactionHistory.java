@@ -20,17 +20,6 @@ import java.util.Date;
 @XmlRootElement
 @Entity
 @Table(name = "TransactionHistory", catalog = "AdventureWorks2017", schema = "Production")
-@NamedQueries({
-        @NamedQuery(name = "TransactionHistory.selectCount", query = "SELECT COUNT(t) FROM TransactionHistory t"),
-        @NamedQuery(name = "TransactionHistory.findAll", query = "SELECT t FROM TransactionHistory t"),
-        @NamedQuery(name = "TransactionHistory.findByTransactionID", query = "SELECT t FROM TransactionHistory t WHERE t.transactionID = :transactionID"),
-        @NamedQuery(name = "TransactionHistory.findByReferenceOrderID", query = "SELECT t FROM TransactionHistory t WHERE t.referenceOrderID = :referenceOrderID"),
-        @NamedQuery(name = "TransactionHistory.findByReferenceOrderLineID", query = "SELECT t FROM TransactionHistory t WHERE t.referenceOrderLineID = :referenceOrderLineID"),
-        @NamedQuery(name = "TransactionHistory.findByTransactionDate", query = "SELECT t FROM TransactionHistory t WHERE t.transactionDate = :transactionDate"),
-        @NamedQuery(name = "TransactionHistory.findByTransactionType", query = "SELECT t FROM TransactionHistory t WHERE t.transactionType = :transactionType"),
-        @NamedQuery(name = "TransactionHistory.findByQuantity", query = "SELECT t FROM TransactionHistory t WHERE t.quantity = :quantity"),
-        @NamedQuery(name = "TransactionHistory.findByActualCost", query = "SELECT t FROM TransactionHistory t WHERE t.actualCost = :actualCost"),
-        @NamedQuery(name = "TransactionHistory.findByModifiedDate", query = "SELECT t FROM TransactionHistory t WHERE t.modifiedDate = :modifiedDate")})
 public class TransactionHistory implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

@@ -7,7 +7,10 @@ package org.jmresler.aw.entities.hr;
 import lombok.Data;
 import org.jmresler.aw.entities.util.JsonSerializable;
 
-import javax.persistence.*;
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.Id;
+import javax.persistence.Table;
 import javax.xml.bind.annotation.XmlRootElement;
 import java.io.Serializable;
 
@@ -18,27 +21,6 @@ import java.io.Serializable;
 @XmlRootElement
 @Entity
 @Table(name = "vEmployee", catalog = "AdventureWorks2017", schema = "HumanResources")
-@NamedQueries({
-        @NamedQuery(name = "VEmployee.selectCount", query = "SELECT COUNT(v) FROM VEmployee v"),
-        @NamedQuery(name = "VEmployee.findAll", query = "SELECT v FROM VEmployee v"),
-        @NamedQuery(name = "VEmployee.findByBusinessEntityID", query = "SELECT v FROM VEmployee v WHERE v.businessEntityID = :businessEntityID"),
-        @NamedQuery(name = "VEmployee.findByTitle", query = "SELECT v FROM VEmployee v WHERE v.title = :title"),
-        @NamedQuery(name = "VEmployee.findByFirstName", query = "SELECT v FROM VEmployee v WHERE v.firstName = :firstName"),
-        @NamedQuery(name = "VEmployee.findByMiddleName", query = "SELECT v FROM VEmployee v WHERE v.middleName = :middleName"),
-        @NamedQuery(name = "VEmployee.findByLastName", query = "SELECT v FROM VEmployee v WHERE v.lastName = :lastName"),
-        @NamedQuery(name = "VEmployee.findBySuffix", query = "SELECT v FROM VEmployee v WHERE v.suffix = :suffix"),
-        @NamedQuery(name = "VEmployee.findByJobTitle", query = "SELECT v FROM VEmployee v WHERE v.jobTitle = :jobTitle"),
-        @NamedQuery(name = "VEmployee.findByPhoneNumber", query = "SELECT v FROM VEmployee v WHERE v.phoneNumber = :phoneNumber"),
-        @NamedQuery(name = "VEmployee.findByPhoneNumberType", query = "SELECT v FROM VEmployee v WHERE v.phoneNumberType = :phoneNumberType"),
-        @NamedQuery(name = "VEmployee.findByEmailAddress", query = "SELECT v FROM VEmployee v WHERE v.emailAddress = :emailAddress"),
-        @NamedQuery(name = "VEmployee.findByEmailPromotion", query = "SELECT v FROM VEmployee v WHERE v.emailPromotion = :emailPromotion"),
-        @NamedQuery(name = "VEmployee.findByAddressLine1", query = "SELECT v FROM VEmployee v WHERE v.addressLine1 = :addressLine1"),
-        @NamedQuery(name = "VEmployee.findByAddressLine2", query = "SELECT v FROM VEmployee v WHERE v.addressLine2 = :addressLine2"),
-        @NamedQuery(name = "VEmployee.findByCity", query = "SELECT v FROM VEmployee v WHERE v.city = :city"),
-        @NamedQuery(name = "VEmployee.findByStateProvinceName", query = "SELECT v FROM VEmployee v WHERE v.stateProvinceName = :stateProvinceName"),
-        @NamedQuery(name = "VEmployee.findByPostalCode", query = "SELECT v FROM VEmployee v WHERE v.postalCode = :postalCode"),
-        @NamedQuery(name = "VEmployee.findByCountryRegionName", query = "SELECT v FROM VEmployee v WHERE v.countryRegionName = :countryRegionName"),
-        @NamedQuery(name = "VEmployee.findByAdditionalContactInfo", query = "SELECT v FROM VEmployee v WHERE v.additionalContactInfo = :additionalContactInfo")})
 public class VEmployee implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

@@ -19,20 +19,6 @@ import java.util.Date;
 @XmlRootElement
 @Entity
 @Table(name = "vEmployeeDepartmentHistory", catalog = "AdventureWorks2017", schema = "HumanResources")
-@NamedQueries({
-        @NamedQuery(name = "VEmployeeDepartmentHistory.selectCount", query = "SELECT COUNT(v) FROM VEmployeeDepartmentHistory v"),
-        @NamedQuery(name = "VEmployeeDepartmentHistory.findAll", query = "SELECT v FROM VEmployeeDepartmentHistory v"),
-        @NamedQuery(name = "VEmployeeDepartmentHistory.findByBusinessEntityID", query = "SELECT v FROM VEmployeeDepartmentHistory v WHERE v.businessEntityID = :businessEntityID"),
-        @NamedQuery(name = "VEmployeeDepartmentHistory.findByTitle", query = "SELECT v FROM VEmployeeDepartmentHistory v WHERE v.title = :title"),
-        @NamedQuery(name = "VEmployeeDepartmentHistory.findByFirstName", query = "SELECT v FROM VEmployeeDepartmentHistory v WHERE v.firstName = :firstName"),
-        @NamedQuery(name = "VEmployeeDepartmentHistory.findByMiddleName", query = "SELECT v FROM VEmployeeDepartmentHistory v WHERE v.middleName = :middleName"),
-        @NamedQuery(name = "VEmployeeDepartmentHistory.findByLastName", query = "SELECT v FROM VEmployeeDepartmentHistory v WHERE v.lastName = :lastName"),
-        @NamedQuery(name = "VEmployeeDepartmentHistory.findBySuffix", query = "SELECT v FROM VEmployeeDepartmentHistory v WHERE v.suffix = :suffix"),
-        @NamedQuery(name = "VEmployeeDepartmentHistory.findByShift", query = "SELECT v FROM VEmployeeDepartmentHistory v WHERE v.shift = :shift"),
-        @NamedQuery(name = "VEmployeeDepartmentHistory.findByDepartment", query = "SELECT v FROM VEmployeeDepartmentHistory v WHERE v.department = :department"),
-        @NamedQuery(name = "VEmployeeDepartmentHistory.findByGroupName", query = "SELECT v FROM VEmployeeDepartmentHistory v WHERE v.groupName = :groupName"),
-        @NamedQuery(name = "VEmployeeDepartmentHistory.findByStartDate", query = "SELECT v FROM VEmployeeDepartmentHistory v WHERE v.startDate = :startDate"),
-        @NamedQuery(name = "VEmployeeDepartmentHistory.findByEndDate", query = "SELECT v FROM VEmployeeDepartmentHistory v WHERE v.endDate = :endDate")})
 public class VEmployeeDepartmentHistory implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

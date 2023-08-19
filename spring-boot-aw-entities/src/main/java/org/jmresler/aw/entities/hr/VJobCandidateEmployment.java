@@ -19,20 +19,6 @@ import java.util.Date;
 @XmlRootElement
 @Entity
 @Table(name = "vJobCandidateEmployment", catalog = "AdventureWorks2017", schema = "HumanResources")
-@NamedQueries({
-        @NamedQuery(name = "VJobCandidateEmployment.selectCount", query = "SELECT COUNT(v) FROM VJobCandidateEmployment v"),
-        @NamedQuery(name = "VJobCandidateEmployment.findAll", query = "SELECT v FROM VJobCandidateEmployment v"),
-        @NamedQuery(name = "VJobCandidateEmployment.findByJobCandidateID", query = "SELECT v FROM VJobCandidateEmployment v WHERE v.jobCandidateID = :jobCandidateID"),
-        @NamedQuery(name = "VJobCandidateEmployment.findByStartDate", query = "SELECT v FROM VJobCandidateEmployment v WHERE v.startDate = :startDate"),
-        @NamedQuery(name = "VJobCandidateEmployment.findByEndDate", query = "SELECT v FROM VJobCandidateEmployment v WHERE v.endDate = :endDate"),
-        @NamedQuery(name = "VJobCandidateEmployment.findByOrgName", query = "SELECT v FROM VJobCandidateEmployment v WHERE v.orgName = :orgName"),
-        @NamedQuery(name = "VJobCandidateEmployment.findByJobTitle", query = "SELECT v FROM VJobCandidateEmployment v WHERE v.jobTitle = :jobTitle"),
-        @NamedQuery(name = "VJobCandidateEmployment.findByResponsibility", query = "SELECT v FROM VJobCandidateEmployment v WHERE v.responsibility = :responsibility"),
-        @NamedQuery(name = "VJobCandidateEmployment.findByFunctionCategory", query = "SELECT v FROM VJobCandidateEmployment v WHERE v.functionCategory = :functionCategory"),
-        @NamedQuery(name = "VJobCandidateEmployment.findByIndustryCategory", query = "SELECT v FROM VJobCandidateEmployment v WHERE v.industryCategory = :industryCategory"),
-        @NamedQuery(name = "VJobCandidateEmployment.findByCountryRegion", query = "SELECT v FROM VJobCandidateEmployment v WHERE v.countryRegion = :countryRegion"),
-        @NamedQuery(name = "VJobCandidateEmployment.findByState", query = "SELECT v FROM VJobCandidateEmployment v WHERE v.state = :state"),
-        @NamedQuery(name = "VJobCandidateEmployment.findByCity", query = "SELECT v FROM VJobCandidateEmployment v WHERE v.city = :city")})
 public class VJobCandidateEmployment implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

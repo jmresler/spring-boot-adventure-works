@@ -20,14 +20,6 @@ import java.util.Date;
 @XmlRootElement
 @Entity
 @Table(name = "Store", catalog = "AdventureWorks2017", schema = "Sales")
-@NamedQueries({
-        @NamedQuery(name = "Store.selectCount", query = "SELECT COUNT(s) FROM Store s"),
-        @NamedQuery(name = "Store.findAll", query = "SELECT s FROM Store s"),
-        @NamedQuery(name = "Store.findByBusinessEntityID", query = "SELECT s FROM Store s WHERE s.businessEntityID = :businessEntityID"),
-        @NamedQuery(name = "Store.findByName", query = "SELECT s FROM Store s WHERE s.name = :name"),
-        @NamedQuery(name = "Store.findByDemographics", query = "SELECT s FROM Store s WHERE s.demographics = :demographics"),
-        @NamedQuery(name = "Store.findByRowguid", query = "SELECT s FROM Store s WHERE s.rowguid = :rowguid"),
-        @NamedQuery(name = "Store.findByModifiedDate", query = "SELECT s FROM Store s WHERE s.modifiedDate = :modifiedDate")})
 public class Store implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;

@@ -20,18 +20,6 @@ import java.util.Date;
 @XmlRootElement
 @Entity
 @Table(name = "TransactionHistoryArchive", catalog = "AdventureWorks2017", schema = "Production")
-@NamedQueries({
-        @NamedQuery(name = "TransactionHistoryArchive.selectCount", query = "SELECT COUNT(t) FROM TransactionHistoryArchive t"),
-        @NamedQuery(name = "TransactionHistoryArchive.findAll", query = "SELECT t FROM TransactionHistoryArchive t"),
-        @NamedQuery(name = "TransactionHistoryArchive.findByTransactionID", query = "SELECT t FROM TransactionHistoryArchive t WHERE t.transactionID = :transactionID"),
-        @NamedQuery(name = "TransactionHistoryArchive.findByProductID", query = "SELECT t FROM TransactionHistoryArchive t WHERE t.productID = :productID"),
-        @NamedQuery(name = "TransactionHistoryArchive.findByReferenceOrderID", query = "SELECT t FROM TransactionHistoryArchive t WHERE t.referenceOrderID = :referenceOrderID"),
-        @NamedQuery(name = "TransactionHistoryArchive.findByReferenceOrderLineID", query = "SELECT t FROM TransactionHistoryArchive t WHERE t.referenceOrderLineID = :referenceOrderLineID"),
-        @NamedQuery(name = "TransactionHistoryArchive.findByTransactionDate", query = "SELECT t FROM TransactionHistoryArchive t WHERE t.transactionDate = :transactionDate"),
-        @NamedQuery(name = "TransactionHistoryArchive.findByTransactionType", query = "SELECT t FROM TransactionHistoryArchive t WHERE t.transactionType = :transactionType"),
-        @NamedQuery(name = "TransactionHistoryArchive.findByQuantity", query = "SELECT t FROM TransactionHistoryArchive t WHERE t.quantity = :quantity"),
-        @NamedQuery(name = "TransactionHistoryArchive.findByActualCost", query = "SELECT t FROM TransactionHistoryArchive t WHERE t.actualCost = :actualCost"),
-        @NamedQuery(name = "TransactionHistoryArchive.findByModifiedDate", query = "SELECT t FROM TransactionHistoryArchive t WHERE t.modifiedDate = :modifiedDate")})
 public class TransactionHistoryArchive implements Serializable, JsonSerializable {
 
     private static final long serialVersionUID = 1L;
